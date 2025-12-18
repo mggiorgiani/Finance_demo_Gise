@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Centrum Secure – Insurance made simple</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">
+      <span class="logo-mark">CS</span>
+      <span class="logo-text">Centrum Secure</span>
+    </div>
+    <nav class="main-nav">
+      <a href="#products">Products</a>
+      <a href="#why-us">Why us</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Insurance made simple, for everyday life.</h1>
+        <p>
+          Protect what matters most with clear coverage, transparent pricing,
+          and service you can rely on – online, anytime.
+        </p>
+        <div class="hero-actions">
+          <a href="#products" class="btn btn-primary">Get a quote</a>
+          <a href="#contact" class="btn btn-secondary">Contact us</a>
+        </div>
+        <p class="hero-note">
+          From home to car and health – one place for all your insurance needs.
+        </p>
+      </div>
+      <div class="hero-panel">
+        <h2>Quick quote</h2>
+        <form class="quote-form" onsubmit="event.preventDefault(); openChatFromForm();">
+          <label>
+            What do you want to insure?
+            <select>
+              <option>Home</option>
+              <option>Car</option>
+              <option>Health</option>
+              <option>Life</option>
+            </select>
+          </label>
+          <label>
+            Postal code
+            <input type="text" placeholder="1234 AB" />
+          </label>
+          <label>
+            Email
+            <input type="email" placeholder="you@example.com" />
+          </label>
+          <button type="submit" class="btn btn-primary full-width">
+            Talk to an advisor
+          </button>
+          <p class="form-hint">
+            For demo purposes, this will open the chat.
+          </p>
+        </form>
+      </div>
+    </section>
+
+    <!-- PRODUCTS -->
+    <section id="products" class="section section-light">
+      <div class="section-header">
+        <h2>Our products</h2>
+        <p>Flexible insurance tailored to modern life.</p>
+      </div>
+      <div class="cards-grid">
+        <article class="card">
+          <h3>Home insurance</h3>
+          <p>
+            Protect your home and belongings against damage, theft, and unexpected events.
+          </p>
+          <ul>
+            <li>Building and contents coverage</li>
+            <li>Emergency repairs included</li>
+            <li>Simple online claims</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Car insurance</h3>
+          <p>
+            Stay safe on the road with coverage options that fit your car and your driving habits.
+          </p>
+          <ul>
+            <li>Liability, limited and all-risk</li>
+            <li>24/7 roadside assistance</li>
+            <li>Fast digital claims</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Health insurance</h3>
+          <p>
+            Access quality care with flexible plans for individuals and families.
+          </p>
+          <ul>
+            <li>Core and additional cover</li>
+            <li>Digital health services</li>
+            <li>Support in your own language</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Life insurance</h3>
+          <p>
+            Protect your loved ones with clear, predictable coverage.
+          </p>
+          <ul>
+            <li>Transparent conditions</li>
+            <li>Flexible terms</li>
+            <li>Guidance from our advisors</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- WHY US -->
+    <section id="why-us" class="section">
+      <div class="section-header">
+        <h2>Why customers choose Centrum Secure</h2>
+        <p>Digital when you want it, human when you need it.</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature">
+          <h3>Simple & clear</h3>
+          <p>No small print surprises. Just clear coverage and transparent pricing.</p>
+        </div>
+        <div class="feature">
+          <h3>Always online</h3>
+          <p>Manage your policies, claims and documents 24/7 via our digital portal.</p>
+        </div>
+        <div class="feature">
+          <h3>Human support</h3>
+          <p>Chat with an advisor in real time when you need help or have questions.</p>
+        </div>
+        <div class="feature">
+          <h3>Secure & trusted</h3>
+          <p>Your data and policies are protected with modern security standards.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section section-light">
+      <div class="section-header">
+        <h2>Need help?</h2>
+        <p>Our team is ready to assist with claims, questions and advice.</p>
+      </div>
+      <div class="contact-layout">
+        <div>
+          <h3>Contact options</h3>
+          <ul class="contact-list">
+            <li><strong>Chat:</strong> use the chat button at the bottom right.</li>
+            <li><strong>Phone:</strong> +31 88 000 0000 (Mon–Fri, 08:00–18:00)</li>
+            <li><strong>Email:</strong> support@centrumsecure.example</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Typical questions</h3>
+          <ul class="contact-list">
+            <li>“I want to report car damage.”</li>
+            <li>“How do I change my address?”</li>
+            <li>“What is covered by my home insurance?”</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2025 Centrum Secure – Demo website for conversational experience.</p>
+  </footer>
+
+  <!-- CHAT BUTTON -->
+  <button class="chat-launcher" onclick="openDemoChat()">
+    Chat with us
+  </button>
+
+  <!-- Placeholder for Genesys or other chat widget -->
+  <!--
+  <script src="YOUR_GENESYS_WIDGET_SNIPPET.js"></script>
+  -->
+
+  <script src="script.js"></script>
+</body>
+<script type="text/javascript" charset="utf-8">
+  (function (g, e, n, es, ys) {
+    g['_genesysJs'] = e;
+    g[e] = g[e] || function () {
+      (g[e].q = g[e].q || []).push(arguments)
+    };
+    g[e].t = 1 * new Date();
+    g[e].c = es;
+    ys = document.createElement('script'); ys.async = 1; ys.src = n; ys.charset = 'utf-8'; document.head.appendChild(ys);
+  })(window, 'Genesys', 'https://apps.mypurecloud.ie/genesys-bootstrap/genesys.min.js', {
+    environment: 'prod-euw1',
+    deploymentId: '458489c9-fcd4-49a2-988a-386998a9d007'
+  });
+</script>
+</html>
